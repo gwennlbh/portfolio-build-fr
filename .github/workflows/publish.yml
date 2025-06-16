@@ -28,6 +28,7 @@ jobs:
         with:
           repository: gwennlbh/portfolio
           path: source
+          ref: ${{ github.event.client_payload.ref }}
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
